@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: true
+  tasks:
+   - name: to create a file
+     ansible.builtin.file
+      name:/home/niha/hello
+      state:touch
